@@ -105,7 +105,7 @@ section {
 .header > .prepare > h2 {
     font-family: 'Outfit-Bold', serif;
     color: var(--rose-800);
-    font-size: 1rem;
+    font-size: 1.2rem;
     margin-bottom: 1rem;
 }
 .header > .prepare > ul {
@@ -121,7 +121,7 @@ h1 {
 }
 h2 {
     font-family: 'YoungSerif-Regular', serif;
-    font-size: 2rem;
+    font-size: 1.8rem;
     font-weight: 400;
     color: var(--brown-800);
 }
