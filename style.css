@@ -115,13 +115,13 @@ section {
 h1 {
     color: var(--stone-900);
     font-family: 'YoungSerif-Regular', serif;
-    font-size: 2rem;
+    font-size: 2.5rem;
     font-weight: 400;
     line-height: 1.2;
 }
 h2 {
     font-family: 'YoungSerif-Regular', serif;
-    font-size: 1.5rem;
+    font-size: 2rem;
     font-weight: 400;
     color: var(--brown-800);
 }
