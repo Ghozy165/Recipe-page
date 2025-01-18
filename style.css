@@ -62,7 +62,7 @@ body {
 
 .container {
     width: fit-content;
-    max-width: 760px;
+    max-width: 640px;
     background-color: var(--white);
     display: flex;
     flex-direction: column;
@@ -71,7 +71,7 @@ body {
 }
 
 .image {
-    max-width: 760px;
+    max-width: 640px;
 }
 .image img {
     width: 100%;
@@ -80,7 +80,7 @@ body {
 
 section {
     width: fit-content;
-    max-width: 760px;
+    max-width: 640px;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
