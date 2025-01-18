@@ -78,7 +78,7 @@ body {
     object-fit: contain;
 }
 
-section {
+.container-content {
     width: fit-content;
     max-width: 640px;
     display: flex;
@@ -91,7 +91,19 @@ section {
     border-bottom: 1px solid var(--stone-150);
 }
 
-.header > .prepare {
+.container-header {
+    width: fit-content;
+    max-width: 640px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    margin: 0 2rem;
+    padding-top: 2rem;
+    gap: 1.5rem;
+}
+
+.container-header > .prepare {
     width: 100%;
     background-color: var(--rose-50);
     display: flex;
@@ -102,13 +114,13 @@ section {
     padding: 2rem;
 }
 
-.header > .prepare > h2 {
+.container-header > .prepare > h2 {
     font-family: 'Outfit-Bold', serif;
     color: var(--rose-800);
     font-size: 1.2rem;
     margin-bottom: 1rem;
 }
-.header > .prepare > ul {
+.container-header > .prepare > ul {
     padding: 0 2.5rem;
 }
 
