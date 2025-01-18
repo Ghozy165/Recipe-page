@@ -36,20 +36,28 @@
   --rose-800: hsl(332, 51%, 32%);
   --rose-50: hsl(330, 100%, 98%);
 
-  font-size: 16px;
+  --young-serif: 'YoungSerif-Regular', serif;
+  --outfit-regular: 'Outfit-Regular', serif;
+  --outfit-semibold: 'Outfit-SemiBold', serif;
+  --outfit-bold: 'Outfit-Bold', serif;
 
-  font-family: 'Outfit-Regular', serif;
+  font-size: 16px;
+}
+
+* { 
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
 body {
   background-color: var(--stone-100);
+  font-family: 'Outfit-Regular', serif;
   color: var(--stone-600);
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  margin: 0;
-  padding: 0;
 }
 
 .container {
@@ -59,13 +67,104 @@ body {
     flex-direction: column;
 }
 
-section {
-    width: fit-content;
+.image {
+    max-width: 768px;
+}
+.image img {
+    width: 100%;
+    object-fit: contain;
 }
 
-.thumbnail {
-    max-width: 1024px;
+section {
+    width: fit-content;
+    max-width: 768px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    margin: 0 2rem;
+    padding: 2rem 0;
+    gap: .5rem;
+    background-color: greenyellow;
+    border-bottom: 1px solid red;
 }
-.thumbnail img {
+
+.header > .prepare {
     width: 100%;
+    background-color: var(--rose-50);
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    border-radius: .5rem;
+}
+
+.header > .prepare > h2 {
+    color: var(--rose-800);
+    font-size: 1rem;
+    padding: 1rem;
+}
+.header > .prepare > ul {
+    padding: 0 2.5rem;
+}
+
+h1 {
+    color: var(--stone-900);
+    font-family: 'YoungSerif-Regular', serif;
+    font-size: 2rem;
+    font-weight: 400;
+    line-height: 1.2;
+}
+h2 {
+    font-family: 'YoungSerif-Regular', serif;
+    font-size: 1.5rem;
+    font-weight: 400;
+    color: var(--brown-800);
+}
+p {
+    font-family: 'Outfit-Regular', serif;
+    font-size: 1rem;
+    font-weight: 400;
+    color: var(--stone-900);
+}
+ul, ol {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    font-family: 'Outfit-Regular', serif;
+    font-size: 1rem;
+    font-weight: 400;
+    color: var(--stone-600);
+    padding: 0 1.5rem;
+    gap: .5rem;
+    background-color: yellow;
+}
+
+span {
+    font-weight: 600;
+}
+
+table {
+    width: 100%;
+}
+td {
+    border-bottom: 1px solid var(--stone-150);
+    padding: 1rem 1.5rem;
+}
+
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    white-space: nowrap;
+    border: 0;
+}
+.no-border {
+    border: none;
 }
